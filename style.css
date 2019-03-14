@@ -33,12 +33,13 @@ html, body {
   padding-top: 0px;
   padding-bottom: 10px;
 }
-.bar1, .bar2, .bar3 {
+.bar1, .bar2, .bar3{
   width: 30px;
   height: 4px;
   margin: 6px 0;
   transition: 0s;
   background-color: #e65c00;
+  z-index: 1;
 }
 
 #footer {
@@ -49,4 +50,46 @@ html, body {
   clear: both;
   line-height: 50px;
   text-align: center;
+}
+
+nav {
+  width: 240px;
+  background-color: #1a1a1a;
+  position: fixed;
+  background-attachment: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all ease-in-out 200ms;
+  -webkit-transition: all ease-in-out 200ms;
+}
+
+nav ul  {
+  padding-left: 30px;
+  padding-top: 60px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 4px 0px;
+}
+
+nav ul li a {
+  font-family: Arial;
+  font-weight: 300;
+  color: #b3b3b3;
+  text-transform: uppercase;
+}
+
+#toggleMenu {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 1050;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+  -webkit-transition: all ease-in-out 200ms;
 }
