@@ -10,7 +10,7 @@
       <div id="container">
         <div class="header">
           <img src="img/logo.png" alt="logo" class="templateLogo" style="width: auto; height: 45px;">
-        <div id="toggleMenu" onclick="toggleMenu()">
+        <div id="toggleMenu">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -25,20 +25,6 @@
             <li><a href="#">NEWS + EVENTS</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
-          <script>
-            var toggleStatus = 1;
-            function toggleMenu(x) {
-              if (toggleStatus == 1) {
-                document.getElementById("menu").style.left = "-240px";
-                document.getElementById("footer").style.display = "block";
-                toggleStatus = 0;
-              } else if (toggleStatus == 0) {
-                  document.getElementById("menu").style.left = "0px";
-                  document.getElementById("footer").style.display = "none";
-                  toggleStatus = 1;
-              }
-            }
-          </script>
         </nav>
         </div>
         <div id="main">
@@ -50,3 +36,18 @@
       </footer><!--footer has to be outside container div to stay at bottom of page -->
     </body>
   </html>
+  <script>
+    var toggleStatus = 1;
+    let toggleMenu = document.getElementById("toggleMenu");
+    toggleMenu.addEventListener("click", function() {
+      if (toggleStatus == 1) {
+        document.getElementById("menu").style.left = "0px";
+        document.getElementById("footer").style.display = "none";
+        toggleStatus = 0;
+      } else if (toggleStatus == 0) {
+          document.getElementById("menu").style.left = "-240px";
+          document.getElementById("footer").style.display = "block";
+          toggleStatus = 1;
+      }
+    })
+  </script>
