@@ -19,7 +19,7 @@
         </div>
         <div class="nav">
         <nav id="menu">
-          <ul>
+          <ul class="menu-bar">
             <li><a href="#">PROJECTS</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">LG CONSTRUCTION</a></li>
@@ -39,6 +39,7 @@
     </body>
   </html>
   <script>
+  function runNav() {
     var toggleStatus = 1;
     let toggleMenu = document.getElementById("toggleMenu");
     toggleMenu.addEventListener("click", navOpenAndClose);
@@ -55,8 +56,31 @@
           toggleStatus = 1;
         }
    }
-
    function hamburgerX() {
       this.classList.toggle("change");
    }
+ };
+
+ function imgMoved (w) {
+   if (!w.matches) {
+     document.getElementsById("menu-bar").appendChild(document.getElementsByClassName("templateLogo"));
+   } else {
+
+   }
+ };
+
+function navCondition (w) {
+  if (w.matches) {
+    runNav();
+  } else {
+  }
+};
+
+var w = window.matchMedia("(max-width: 768px)")
+navCondition(w)
+w.addListener(navCondition)
+imgMoved (w)
+w.addListener(imgMoved)
+
+
   </script>
