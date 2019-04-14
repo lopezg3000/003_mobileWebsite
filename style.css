@@ -1,9 +1,16 @@
+#logo1 {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+  }
+
+  #logo1 {
+    display: block;
   }
 
   html, body {
@@ -13,7 +20,7 @@
   #container {
     height: 100%;
     width: 100%;
-    background-image: url('img/backgroundImg.jpg');
+    background-image: url('img/backgroundImgFinal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 40%;
@@ -44,7 +51,7 @@
   }
 
   #footer {
-    background-color: #D3D3D3;
+    background-color: rgba(255,255, 255, 0.6);
     position: relative;
     height: 50px;
     margin-top: 0px;/*negaive number in order to get it to be visible*/
@@ -74,7 +81,7 @@
 
   nav ul li {
     list-style: none;
-    padding: 4px 0px;
+    padding: 0px 0px;
   }
 
   nav ul li a {
@@ -130,35 +137,45 @@
   #container {
     height: 100%;
     width: 100%;
-    background-image: url('img/backgroundImg.jpg');
+    background-image: url('img/backgroundImgFinal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 40%;
   }
 
-  .header {
-    width: 100%;
-    height: 100px;
-  }
-
-  .menu-bar li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 30px;
+.nav {
+  background: url(img/logo.png);
+  padding-top: 0px;
+  background-size: 79px;
+  background-position-y: 11px;
+  background-repeat: no-repeat;
+  padding-left: 154px;;
 }
 
-  #barsWrapper {
-    display: none;
+  .header {
+    width: 100%;
+    height: 80px;
+    box-shadow: 1px 2px 4px grey;
+    background: rgba(255,255,255, 0.6);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+  .menu-bar li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px;
+    margin: 0px 0 0px -45px;
   }
 
   #footer {
-    background-color: #D3D3D3;
+    background-color: rgba(255,255,255, 0.6);
     position: relative;
-    height: 50px;
+    height: 70px;
     margin-top: 0px;/*negaive number in order to get it to be visible*/
     clear: both;
-    line-height: 50px;
+    line-height: 60px;
     text-align: center;
-    font-size: 11px;
   }
 }
