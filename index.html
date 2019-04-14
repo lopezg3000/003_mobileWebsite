@@ -9,7 +9,7 @@
     <body>
       <div id="container">
         <div class="header">
-          <img src="img/logo.png" alt="logo" class="templateLogo" style="width: auto; height: 45px;">
+          <img id="logo1" src="img/logo.png" alt="logo" class="templateLogo" style="width: auto; height: 45px;">
         <div id="barsWrapper">
           <div id="toggleMenu">
             <div class="bar1"></div>
@@ -20,7 +20,7 @@
         <div class="nav">
         <nav id="menu">
           <ul class="menu-bar">
-            <li><a href="#">PROJECTS</a></li>
+            <li><a href="/projectsPage.html">PROJECTS</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">LG CONSTRUCTION</a></li>
             <li><a href="#">LG DEVELOPMENT</a></li>
@@ -63,7 +63,7 @@
 
  function imgMoved (w) {
    if (!w.matches) {
-     document.getElementsById("menu-bar").appendChild(document.getElementsByClassName("templateLogo"));
+     document.getElementsByClassName("templateLogo").appendChild(document.getElementsByClassName("menu-bar"));
    } else {
 
    }
