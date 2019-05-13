@@ -1,6 +1,11 @@
 #logo1 {
   display: none;
 }
+
+.homepageClick {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   * {
     margin: 0;
@@ -110,6 +115,15 @@
     text-transform: uppercase;
   }
 
+  .projectsBar li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 4px;
+    margin: 10px 0 0px 0px;
+    font-family: "roboto", sans-serif;
+    color: grey;
+  }
+
   #toggleMenu {
     width: 20px;
     height: 20px;
@@ -180,7 +194,7 @@
     width: 100%;
     height: 80px;
     box-shadow: 1px 2px 4px grey;
-    background: rgba(255,255,255, 0.8);
+    background: rgba(255,255,255, 0.6);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -194,7 +208,7 @@
   }
 
   #footer {
-    background-color: #D3D3D3;
+    background-color: rgba(255,255,255, 0.6);
     position: relative;
     height: 70px;
     margin-top: 0px;/*negaive number in order to get it to be visible*/

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <meta charset="utf-8">
       <title></title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="projects.css">
+      <script type="text/javascript" src="ImgGrid.js"></script>
+      <link href="projects.css" rel="stylesheet" type="text/css">
     </head>
     <body>
       <div id="container">
@@ -35,16 +37,167 @@
         </div>
       </div>
       <div id="main">
-        <h1>Complete</h1>
-        <img id="projectPic1" src="img/projectPic1.jpg" alt="Brown Building" class="projectPics">
-        <p class="address">1744 North Western</p>
-        <p class="city">Bucktown</p>
-        <img id="projectPic2" src="img/projectPic2.jpg" alt="Brown Building" class="projectPics">
-        <p class="address">1879 North Milwaukee</p>
-        <p class="city">Wicker Park</p>
-        <img id="projectPic3" src="img/projectPic3.jpg" alt="Brown Building" class="projectPics">
-        <p class="address">330 South Wells</p>
-        <p class="city">River North</p>
+        <div id="projectMenu">
+          <ul class="projectsBar">
+            <li><a id="current">CURRENT</a></li>
+            <li><a id="complete">COMPLETE</a></li>
+            <li><a id="construction">CONSTRUCTION</a></li>
+            <li><a id="development">DEVELOPMENT</a></li>
+            <li><a id="commercial">COMMERCIAL</a></li>
+            <li><a id="multiFamily">MULTI FAMILY</a></li>
+            <li><a id="singleFamily">SINGLE FAMILY</a></li>
+            <li><a id="available">AVAILABLE</a></li>
+            <li><a id="map"><img src="img/mapPointerArrow.png" style="width: auto; height: 19px; margin-bottom: -4px; margin-right: -3px;"> MAP</a></li>
+          </ul>
+        </div>
+          <div id="projectsCurrentImages">
+            <div class="row">
+              <div class="column">
+                <img src="img/projectPic1.jpg" class="projectPics">
+                <img src="img/projectPic2.jpg" class="projectPics">
+                <img src="img/projectPic3.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsCurrent4.png" class="projectPics">
+                <img src="img/projectsCurrent5.jpg" class="projectPics">
+                <img src="img/projectsCurrent6.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsCurrent7.jpg" class="projectPics">
+                <img src="img/projectsCurrent8.jpg" class="projectPics">
+                <img src="img/projectsCurrent9.jpg" class="projectPics">
+              </div>
+            </div>
+          </div>
+          <div id="projectsCompleteImages">
+            <div class="row">
+              <div class="column">
+                <img src="img/projectsComplete1.jpg" class="projectPics">
+                <img src="img/projectsComplete2.jpg" class="projectPics">
+                <img src="img/projectsComplete3.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsComplete4.jpg" class="projectPics">
+                <img src="img/projectsComplete5.jpg" class="projectPics">
+                <img src="img/projectsComplete6.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsComplete7.jpg" class="projectPics">
+                <img src="img/projectsComplete8.jpg" class="projectPics">
+                <img src="img/projectsComplete9.jpg" class="projectPics">
+              </div>
+            </div>
+          </div>
+          <div id="projectsConstructionImages">
+            <div class="row">
+              <div class="column">
+                <img src="img/projectsConstruction1.jpg" class="projectPics">
+                <img src="img/projectsConstruction2.jpg" class="projectPics">
+                <img src="img/projectsConstruction3.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsConstruction4.png" class="projectPics">
+                <img src="img/projectsConstruction5.jpg" class="projectPics">
+                <img src="img/projectsConstruction6.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsConstruction7.jpg" class="projectPics">
+                <img src="img/projectsConstruction8.jpg" class="projectPics">
+                <img src="img/projectsConstruction9.jpg" class="projectPics">
+              </div>
+            </div>
+          </div>
+          <div id="projectsDevelopmentImages">
+            <div class="row">
+              <div class="column">
+                <img src="img/projectsDevelopment1.jpg" class="projectPics">
+                <img src="img/projectsDevelopment2.jpg" class="projectPics">
+                <img src="img/projectsDevelopment3.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsDevelopment4.png" class="projectPics">
+                <img src="img/projectsDevelopment5.jpg" class="projectPics">
+                <img src="img/projectsDevelopment6.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsDevelopment7.jpg" class="projectPics">
+                <img src="img/projectsDevelopment8.jpg" class="projectPics">
+                <img src="img/projectsDevelopment9.jpg" class="projectPics">
+              </div>
+            </div>
+          </div>
+          <div id="projectsCommercialImages">
+            <div class="row">
+              <div class="column">
+                <img src="img/projectsCommercial1.png" class="projectPics">
+                <img src="img/projectsCommercial2.jpg" class="projectPics">
+                <img src="img/projectsCommercial3.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsCommercial4.jpg" class="projectPics">
+                <img src="img/projectsCommercial5.jpg" class="projectPics">
+                <img src="img/projectsCommercial6.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsCommercial7.jpg" class="projectPics">
+                <img src="img/projectsCommercial8.jpg" class="projectPics">
+                <img src="img/projectsCommercial9.jpg" class="projectPics">
+              </div>
+            </div>
+          </div>
+          <div id="projectsMultiFamilyImages">
+            <div class="row">
+              <div class="column">
+                <img src="img/projectsMultiFamily1.jpg" class="projectPics">
+                <img src="img/projectsMultiFamily2.jpg" class="projectPics">
+                <img src="img/projectsMultiFamily3.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsMultiFamily4.jpg" class="projectPics">
+                <img src="img/projectsMultiFamily5.jpg" class="projectPics">
+                <img src="img/projectsMultiFamily6.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsMultiFamily7.jpg" class="projectPics">
+                <img src="img/projectsMultiFamily8.jpg" class="projectPics">
+                <img src="img/projectsMultiFamily9.jpg" class="projectPics">
+              </div>
+            </div>
+          </div>
+          <div id="projectsSingleFamilyImages">
+            <div class="row">
+              <div class="column">
+                <img src="img/projectsSingleFamily1.jpg" class="projectPics">
+                <img src="img/projectsSingleFamily2.jpg" class="projectPics">
+                <img src="img/projectsSingleFamily3.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsSingleFamily4.jpg" class="projectPics">
+                <img src="img/projectsSingleFamily5.jpg" class="projectPics">
+                <img src="img/projectsSingleFamily6.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsSingleFamily7.jpg" class="projectPics">
+                <img src="img/projectsSingleFamily8.jpg" class="projectPics">
+                <img src="img/projectsSingleFamily9.jpg" class="projectPics">
+              </div>
+            </div>
+          </div>
+          <div id="projectsAvailableImages">
+            <div class="row">
+              <div class="column">
+                <img src="img/projectsAvailable1.jpg" class="projectPics">
+                <img src="img/projectsAvailable2.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsAvailable3.jpg" class="projectPics">
+                <img src="img/projectsAvailable4.jpg" class="projectPics">
+              </div>
+              <div class="column">
+                <img src="img/projectsAvailable5.jpg" class="projectPics">
+              </div>
+            </div>
+          </div>
         <footer id="footer"><!--is going to be 100% of the height of the browser -->
           <div class="copyright">&copy;2019 LG Development Group. All rights reserved.</div>
         </footer><!--footer has to be outside container div to stay at bottom of page -->
@@ -94,6 +247,5 @@ navCondition(w)
 w.addListener(navCondition)
 imgMoved (w)
 w.addListener(imgMoved)
-
 
   </script>
