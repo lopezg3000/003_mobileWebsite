@@ -57,6 +57,11 @@
     z-index: 1;
   }
 
+  .menu-bar li a:hover, a.selected {
+    background-color: #222;
+    color: orange;
+  }
+
   #footer {
     background-color: rgba(255,255, 255, 0.6);
     position: relative;
