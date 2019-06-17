@@ -170,9 +170,9 @@
     position: fixed;
     z-index: 1050;
     cursor: pointer;
+    -webkit-border-radius: 0 4px 4px 0;
     transition: all ease-in-out 200ms;
     -webkit-transition: all ease-in-out 200ms;
-    -webkit-border-radius: 0 4px 4px 0;
     display: block;
     left: 0;
     padding: 7px 7px 3px;
