@@ -6,6 +6,7 @@
       <title></title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script type="text/javascript" src="ImgGrid.js"></script>
+      <script type="text/javascript" src="closeNav.js"></script>
       <link href="projects.css" rel="stylesheet" type="text/css">
     </head>
     <body>
@@ -351,21 +352,14 @@
     var toggleStatus = 1;
     let toggleMenu = document.getElementById("toggleMenu");
     toggleMenu.addEventListener("click", navOpenAndClose);
-    toggleMenu.addEventListener("click", hamburgerX);
 
 
     function navOpenAndClose() {
       if (toggleStatus == 1) {
         document.getElementById("menu").style.left = "0px";
         document.getElementById("footer").style.display = "none";
-        toggleMenu.style.marginLeft = "240px"
-        toggleStatus = 0;
-      } else if (toggleStatus == 0) {
-          document.getElementById("menu").style.left = "-240px";
-          document.getElementById("footer").style.display = "block";
-          toggleMenu.style.marginLeft = "0px"
-          toggleStatus = 1;
-        }
+        toggleMenu.style.left = "-50px";
+      }
    }
  };
 
