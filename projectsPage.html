@@ -11,8 +11,8 @@
     <body>
       <div id="container">
         <div class="header">
-          <a href="/index.html">
-            <img id="logo1" src="img/logo.png" alt="logo" class="templateLogo" style="width: auto; height: 45px;">
+          <a href="/index.html" class="middle">
+            <img id="logo1" src="img/logo.png" alt="logo" class="templateLogo" style="width: auto; height: 60px; display: inline-block; padding-bottom: 4px;">
           </a>
         <div id="barsWrapper">
           <div id="toggleMenu">
@@ -353,19 +353,19 @@
     toggleMenu.addEventListener("click", navOpenAndClose);
     toggleMenu.addEventListener("click", hamburgerX);
 
+
     function navOpenAndClose() {
       if (toggleStatus == 1) {
         document.getElementById("menu").style.left = "0px";
         document.getElementById("footer").style.display = "none";
+        toggleMenu.style.marginLeft = "240px"
         toggleStatus = 0;
       } else if (toggleStatus == 0) {
           document.getElementById("menu").style.left = "-240px";
           document.getElementById("footer").style.display = "block";
+          toggleMenu.style.marginLeft = "0px"
           toggleStatus = 1;
         }
-   }
-   function hamburgerX() {
-      this.classList.toggle("change");
    }
  };
 
