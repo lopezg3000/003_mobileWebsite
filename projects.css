@@ -44,6 +44,7 @@
     width: 100%;
     text-align: center;
     margin-top: 50px;
+    margin-top: 91px;
   }
 
   .address {
@@ -60,23 +61,18 @@
 
   .header {
     width: 100%;
-    height: 50px;
+    height: 75px;
     background: rgba(255,255, 255, 0.6);
     position: fixed;
     top: 0;
     padding: 10px;
+    text-align: center;
   }
 
   img .projectPics {
     max-width: 100%;
     height: auto;
     width: auto;
-  }
-
-  .header .templateLogo {
-    float: right;
-    padding-top: 0px;
-    padding-bottom: 10px;
   }
 
   #projectsMapImages {
@@ -90,10 +86,14 @@
   .bar1, .bar2, .bar3 {
     width: 30px;
     height: 4px;
-    margin: 6px 0;
     transition: 0s;
-    background-color: #e65c00;
     z-index: 1;
+    -webkit-border-radius: 2px;
+    display: block;
+    height: 4px;
+    margin-bottom: 4px;
+    width: 25px;
+    background-color: #fff;
   }
 
   #footer {
@@ -137,6 +137,7 @@
     font-size: 12px;
     border-color: rgba(0, 0, 0, 0.15);
     font-family: sans-serif;
+    text-align: left;
   }
 
   .projectsBar li {
@@ -154,6 +155,7 @@
     padding: 19px 96px 17px;
     font-size: 100%;
     font-family: sans-serif;
+    text-align:left;
   }
 
   .menu-bar li a:active, a.selected {
@@ -161,8 +163,8 @@
   }
 
   #toggleMenu {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 35px;
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
@@ -170,6 +172,13 @@
     cursor: pointer;
     transition: all ease-in-out 200ms;
     -webkit-transition: all ease-in-out 200ms;
+    -webkit-border-radius: 0 4px 4px 0;
+    display: block;
+    left: 0;
+    padding: 7px 7px 3px;
+    position: absolute;
+    background-color: #ff661b;
+    top: 20px;
   }
 
   /* Rotate first bar */
